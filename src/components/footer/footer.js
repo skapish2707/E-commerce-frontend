@@ -6,6 +6,13 @@ const footer = props => (
     <div className="row">
       <div className="column">
         <ul>
+          <li><a className="footer-link" href="privacypolicy.html">privacy policy</a></li>
+          <li><a className="footer-link" href="privacypolicy.html">terms of service</a></li>
+          <li><a className="footer-link" href="privacypolicy.html">terms of use</a></li>
+        </ul>
+      </div>
+      <div className="column">
+        <ul>
           <li>Address:</li>
           <li>WeBuild Corporation, Bandra(500123)</li>
           <li>Maharashtra, India</li>
@@ -20,7 +27,8 @@ const footer = props => (
       </div>
       <div className="column">
         <ul>
-          <li>Instagram    Facebook    Youtube    Twitter</li>
+          <li>&#xf082;</li>
+          <li></li>
         </ul>
       </div>
 

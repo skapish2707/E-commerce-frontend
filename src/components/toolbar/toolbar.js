@@ -16,9 +16,15 @@ const toolbar = props => (
     </div>
     <div className="header-links">
       <a href="/">Men</a>
-      <a href="/" class="centre-nav">Women</a>
-      <a href="/" class="centre-nav">Men</a>
-      <a href="Sale.html" class="centre-nav">Sale</a>
+      <a href="/">Women</a>
+      <a href="Sale.html">Sale</a>
+    </div>
+    <div>
+      <input type="text" name="" placeholder="search" />
+
+    </div>
+    <div className="header-links">
+      <a href="bookmark.html">Bookmark</a>
       <a href="cart.html">Cart</a>
     </div>
 
