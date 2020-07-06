@@ -6,11 +6,8 @@ import ProductScreen from '../../Screens/ProductScreen'
 
 const main = props => (
   <main className="main">
-    <div className="content">
-      <Route path="/product/:id" component={ProductScreen} />
-      <Route path="/" exact={true} component={HomeScreen} />
-
-    </div>
+    <Route path="/product/:id" component={ProductScreen} />
+    <Route path="/" exact={true} component={HomeScreen} />
 
   </main>
 )

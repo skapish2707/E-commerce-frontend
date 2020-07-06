@@ -1,18 +1,13 @@
 import React from 'react';
 import './toolbar.css'
 import { Route, Link, BrowserRouter } from 'react-router-dom'
+import nike from '../../nike.png'
 
-const openMenu = () => {
-  document.querySelector(".sidebar").classList.add("open")
-}
 
 const toolbar = props => (
   <header className="toolbar">
     <div className="brand">
-      <button onClick={openMenu}>
-        &#9776;
-      </button>
-      <Link to="/">Nike</Link>
+      <Link to="/"><img src={nike} alt="Nike"></img></Link>
     </div>
     <div className="header-links">
       <a href="/">Men</a>
@@ -20,8 +15,12 @@ const toolbar = props => (
       <a href="Sale.html">Sale</a>
     </div>
     <div>
-      <input type="text" name="" placeholder="search" />
-
+      <div class="search">
+        <input type="text" class="searchTerm" placeholder="What are you looking for?"></input>
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
     </div>
     <div className="header-links">
       <a href="bookmark.html">Bookmark</a>

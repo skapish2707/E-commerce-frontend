@@ -4,9 +4,10 @@ html{
 }
 
 body{
-  font: 1.6rem Courier;
-  margin: 0;
-  height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    height: 100vh;
 }
 #root{
   height: 100%;
@@ -26,14 +27,14 @@ body{
 .toolbar{
   grid-area: toolbar;
   height: 100px;
-  position: fixed;
   width: 100%;
   background-color:#ffffff;
   color: #000000;
   display:flex;
-  border-bottom:1px solid #000000;
+  /* border-bottom:1px solid #000000; */
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 5px 6px -8px black;
 
 }
 a{
@@ -62,11 +63,12 @@ a:hover{
 }
 
 .header-links a:hover{
-  color:purple;
+  color: orange;
 }
 
 .main{
   grid-area: main;
+  margin:0;
 }
 .content{
   float: right;
@@ -91,10 +93,10 @@ a:hover{
 
 ul.products{
   display:flex;
-  width: 1500px;
   justify-content: start;
   flex-wrap: wrap;
   float: left;
+  
 }
 
 .products li{
@@ -104,13 +106,13 @@ ul.products{
   float: left;
 }
 .product{
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  margin-right: 150px;
-  margin-left: 0;
+  margin-right: 90px;
   margin-bottom: 50px;
   background-color: #ffffff;
-  float: left;
+  
 
 }
 
@@ -148,10 +150,6 @@ ul.products{
 
 .product-rating{
   margin-bottom: 1rem;
-}
-
-div.content{
-  float: left;
 }
 
 
@@ -252,11 +250,6 @@ div.content{
   width: 320px;
   padding-bottom: 20px;
 }
-.back-to-result{
-  padding: 1rem;
-}
-
-
 .details-action ul li:last-child{
   display: flex;
   
